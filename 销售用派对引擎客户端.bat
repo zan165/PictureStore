@@ -32,8 +32,11 @@ set ASSETS_DIR=%PARTY_HOME%\assets
 set MODELBG=%PARTY_HOME%\assets\BackGround
 set PHOTOGUIDE=%PARTY_HOME%\assets\PhotoGuid
 
+set month=%date:~5,2%
+set day=%date:~8,2%
+set d=%month%.%day%
 
-set pName=阿千\待设计\4.10
+set pName=阿千\待设计\%d%
 REM set /p chooseServer=是谁的订单,输入0退出，输入1林宝，输入2 张 输入3曾志康 输入4 阿千
 REM if /i '!chooseServer!'=='0' goto toEnd
 REM if /i '!chooseServer!'=='1' set pName=林宝\待设计
